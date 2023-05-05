@@ -57,7 +57,7 @@ const Messages: FC<MessagesProps> = ({
         
       {messages.map((message, index) => {
         const isCurrentUser = message.senderId === sessionId
-        {console.log(messages)}
+       
         const hasNextMessageFromSameUser =
           messages[index - 1]?.senderId === messages[index].senderId
 
